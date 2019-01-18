@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>css3 project</title>
-    <style>
+    <style>/*style in the html*/
         /* [10% each]
 1+ css3 background or border property[ies]
 1+ gradient (linear and/or radial)
@@ -20,24 +20,24 @@
 0 (for the whole project): not original at all
 */
 
-        #evilduude {
-            width: 200px;
-            height: 200px;
+        #evilduude {/*evilduude is the monster pixel*/
+            width: 200px;/*how wide the pixel is*/
+            height: 200px;/*how tall the pixel is*/
             position: relative; /*setting it to a normal position*/
             transition:transform ;/*this conects to the transform on hover and it delays it for 2s*/
-            transition-duration: 2s;/**/
-            transform: translate(-50px, -50px);
-            animation-name: evildude;
-            animation-duration: 4s;
+            transition-duration: 2s;/*the transition last for 2 seconds*/
+            transform: translate(-50px, -50px);/* moves the evilduude to a direction next to the tree*/
+            animation-name: evildude;/*makes a name for the pixel to be animated*/
+            animation-duration: 4s;/*the animation last for 4 seconds*/
         }
-        #evilduude:hover{
-            transform: rotate(10deg);
+        #evilduude:hover{/*this makes the transition of the pixel work*/
+            transform: rotate(10deg);/*the pixel moves in 10 deg when you move your mouse on the pixel*/
         }
 
-        @keyframes evildude {
-            0% {
-                left: 0px;
-                top: 0px;
+        @keyframes evildude {/*this makes the animation of the pixel work*/
+            0% {/*is the start of the animated pixel*/
+                left: 0px;/*how far it moves down*/
+                top: 0px;/*how far it moves up*/
             }
             25% {
                 left: 30px;
@@ -49,19 +49,19 @@
             }
         }
 
-        #meantree {
-            background-size: 400px 400px;
+        #meantree {/*the div for the tree */
+            background-size: 400px 400px;/*the background */
             transform: translate(550px, 10px);
-            border: 20px solid olive;
-            background-image: linear-gradient(black, red);
-            box-shadow: -5px 10px 200px blue;
+            border: 20px solid olive;/*the the border size and the color*/
+            background-image: linear-gradient(black, red);/*the background image is black on the top and red at the bottom*/
+            box-shadow: -5px 10px 200px blue;/*the background of the border is making a shadow with the color blue*/
         }
     </style>
 </head>
 
 <body>
 
-    <img id="meantree" src="images/30-dithering.png">
+    <img id="meantree" src="images/30-dithering.png"> 
     <img id="evilduude" src="images/king_of_8bit_hell_by_iamnotapixelartist-d36e5c6 (1).gif" alt="HTML5 Icon">
 </body>
 
