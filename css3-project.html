@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>css3 project</title>
+    <style>
+        /* [10% each]
+1+ css3 background or border property[ies]
+1+ gradient (linear and/or radial)
+1+ shadow (box or text)
+1+ transform (2D or 3D)
+1+ transition
+1+ animation
+[10% proper comments] (anything not intuitive)
+[40% originality]
+40: completely original, 30: mostly original
+20: somewhat original, 10: barely original
+0 (for the whole project): not original at all
+*/
+
+        #evilduude {
+            width: 200px;
+            height: 200px;
+            position: relative; /*setting it to a normal position*/
+            transition:transform ;/*this conects to the transform on hover and it delays it for 2s*/
+            transition-duration: 2s;/**/
+            transform: translate(-50px, -50px);
+            animation-name: evildude;
+            animation-duration: 4s;
+        }
+        #evilduude:hover{
+            transform: rotate(10deg);
+        }
+
+        @keyframes evildude {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                left: 30px;
+                top: 0px;
+            }
+            100% {
+                left: 30px;
+                top: 0px;
+            }
+        }
+
+        #meantree {
+            background-size: 400px 400px;
+            transform: translate(550px, 10px);
+            border: 20px solid olive;
+            background-image: linear-gradient(black, red);
+            box-shadow: -5px 10px 200px blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img id="meantree" src="images/30-dithering.png">
+    <img id="evilduude" src="images/king_of_8bit_hell_by_iamnotapixelartist-d36e5c6 (1).gif" alt="HTML5 Icon">
+</body>
+
+</html>
